@@ -37,7 +37,7 @@ elif page == "Projects":
 
 elif page == "Contact":
     st.title("Contact Me")
-    st.write("Email: example@email.com")
+    st.write("Email: saivullangula0303@gmail.com")
 
     col1, col2 = st.columns(2)
 
@@ -48,5 +48,33 @@ with col1:
 with col2:
     st.subheader("🎥 AI Security Camera")
     st.write("Detects suspicious activity using YOLOv8.")
-    
+
+st.image("security_camera_project.png", caption="AI Surveillance System")
+
+import pandas as pd
+
+data = {
+    "Project": ["AI System", "Security Camera", "SQL Projects"],
+    "Completion": [80, 70, 90]
+}
+
+df = pd.DataFrame(data)
+
+st.bar_chart(df.set_index("Project"))
+
+with open("resume.pdf", "rb") as file:
+    st.download_button("Download My Resume", file, file_name="Sai_Kiran_Resume.pdf")
+
+st.markdown("## 💡 Skills")
+
+st.write("""
+- Python
+- SQL
+- Machine Learning
+- Data Analysis
+- Streamlit
+""")
+
+
+
 
