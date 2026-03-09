@@ -2,9 +2,11 @@ import streamlit as st
 st.title("Welcome to the AI Data World")
 st.write("Here you can sort the AI data")
 
+import streamlit as st
+
 st.set_page_config(page_title="V.Sai Kiran Portfolio", layout="wide")
 
-st.title("V. SAI KIRAN - Data Analyst & AI Developer")
+st.title("👨‍💻 V. Sai Kiran - Data Analyst & AI Developer")
 
 st.write("Welcome to my project dashboard built with Streamlit.")
 
@@ -21,7 +23,6 @@ st.write("Database system to manage doctors, patients, and appointments.")
 
 st.subheader("4. Food Delivery Database")
 st.write("A MySQL project with ER diagram and SQL queries.")
-
 
 page = st.sidebar.selectbox(
     "Choose Section",
@@ -74,7 +75,4 @@ st.write("""
 - Data Analysis
 - Streamlit
 """)
-
-
-
 
